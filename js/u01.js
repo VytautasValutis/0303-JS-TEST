@@ -7,4 +7,3 @@ if (a > b) {
 } else if(a < b) {
     console.log('Skaicius b didesnis', b);
 } else {console.log('Skaiciai lygus'); };
-console.clear();
