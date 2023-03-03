@@ -4,16 +4,15 @@ const { match } = require("minimatch");
 console.clear();
 
 function lygineSuma(a, b) {
-        if(typeof a === typeof b) {
-                return 'Abudu parametrai vienodo tipo'+' '+typeof a;
+        if(typeof a === 'object') {
+                return (a.length + b.length);
         } else {
-                return 'Parametrai skirtingo tipo';
+                return (a + b);
         }
         
 }
 
-console.log(lygineSuma(5, [3,4]));
 console.log(lygineSuma(5, 1));
 console.log(lygineSuma([5, 6, 4], [3,4]));
-console.log(lygineSuma([3,4], 11));
+console.log(lygineSuma([3,4], [6, 11, 33, 1]));
 
